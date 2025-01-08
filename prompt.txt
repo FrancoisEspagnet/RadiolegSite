@@ -1,6 +1,0 @@
-Voici en pièce jointe une maquette tu va réaliser le site en SCSS / HTLM / JS (si besoin)
-le site doit être responsive et tu peux utiliser flexbox.
-les images sont dans le dossier img
-C'est ici un OnePage, le scroll doit être doux.
-Prévois un menu burger pour mobile
-le menu est fixe
