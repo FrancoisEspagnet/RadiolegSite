@@ -1,0 +1,300 @@
+@charset "UTF-8";
+/* commande sass --watch scss\style.scss:scss\style.css */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  line-height: 1;
+}
+body h1 {
+  font-size: 4rem;
+  font-family: "Baskervville", serif;
+}
+body h2 {
+  font-family: "Baskervville", serif;
+  font-size: 4.5rem;
+  text-transform: uppercase;
+  line-height: 1;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #000;
+  padding: 1rem 2rem;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1000;
+}
+.navbar .logo {
+  line-height: 1;
+}
+.navbar .logo img {
+  max-height: 50px;
+}
+.navbar .nav-links {
+  list-style: none;
+  display: flex;
+  gap: 2rem;
+}
+.navbar .nav-links li a {
+  color: #fff;
+  text-decoration: none;
+  font-family: "Roboto", sans-serif;
+}
+.navbar .nav-links li a:hover {
+  color: #d4af37;
+}
+
+.banner {
+  height: 100vh;
+  background: url("../img/groupe-cover.jpg") no-repeat center center/cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  background-position: center;
+}
+.banner h1 {
+  text-shadow: 2px 2px 6px #000;
+  letter-spacing: 0.2em;
+}
+
+.dates {
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+  background-color: #161616;
+}
+.dates .dates-header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: 800px;
+  min-width: 600px;
+  height: 300px;
+  margin: 0;
+  padding: 2rem;
+  background-color: #fff;
+}
+.dates .dates-header h2 {
+  text-align: left;
+  max-width: 80%;
+}
+.dates .dates-header .year {
+  font-family: "Baskervville", serif;
+  writing-mode: sideways-lr;
+  font-size: 5rem;
+  color: #000;
+  font-weight: normal;
+  letter-spacing: 1rem;
+}
+.dates .concert-dates {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: left;
+}
+.dates .concert-dates .date-card {
+  width: 300px;
+  height: 300px;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  align-items: flex-end;
+}
+.dates .concert-dates .date-card .overlay {
+  background: rgba(0, 0, 0, 0.6);
+  backdrop-filter: blur(8px); /* Ajoute l’effet de flou */
+  color: #fff;
+  text-align: center;
+  padding: 1rem;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.dates .concert-dates .date-card .overlay time {
+  font-family: "Baskervville", serif;
+}
+.dates .concert-dates .date-card .overlay time .jour {
+  display: block;
+  font-size: 4rem;
+  font-weight: bold;
+  line-height: 1.3;
+}
+.dates .concert-dates .date-card .overlay time .mois {
+  display: block;
+  font-size: 1.2rem;
+  text-transform: uppercase;
+  margin-top: -0.5rem;
+}
+.dates .concert-dates .date-card .overlay .lieu {
+  margin-top: 1rem;
+  font-family: "Roboto", sans-serif;
+  font-size: 1rem;
+  font-weight: 300;
+}
+
+.group {
+  padding: 4rem 0 0 0;
+  background-color: #000;
+  color: #fff;
+  text-align: center;
+}
+.group h2 {
+  text-align: center;
+}
+.group p {
+  max-width: 600px;
+  margin: 1rem auto;
+  font-family: "Roboto", sans-serif;
+}
+.group .members {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 2rem;
+}
+.group .members .member {
+  flex: 1;
+  min-width: 250px;
+  max-width: 400px;
+  height: 500px;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  display: flex;
+  align-items: flex-end;
+}
+.group .members .member .info {
+  background: linear-gradient(to top, #000, transparent);
+  width: 100%;
+  padding: 1rem;
+  color: #fff;
+  text-align: center;
+}
+.group .members .member .info h3 {
+  font-family: "Baskervville", serif;
+  font-size: 1.5rem;
+}
+.group .members .member .info p {
+  font-family: "Roboto", sans-serif;
+  font-size: 1rem;
+  margin-top: 0.5rem;
+}
+
+.setlist {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 4rem 0;
+  align-items: center;
+}
+.setlist .setlist-header {
+  width: 40%;
+  padding: 1rem;
+  text-align: center;
+}
+.setlist .setlist-content {
+  width: 60%;
+}
+.setlist .setlist-content .setlist-block {
+  flex: 1;
+  background: #000;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Baskervville", serif;
+  font-size: 1.5rem;
+  text-align: center;
+  padding: 2rem 0 2rem 2rem;
+  border-right: 1px solid #fff;
+}
+.setlist .setlist-list {
+  flex: 1;
+  padding: 0 0 0 3rem;
+  border-left: 1px solid;
+}
+.setlist .setlist-list ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.setlist .setlist-list ul li {
+  font-family: "Roboto", sans-serif;
+  font-size: 1rem;
+  padding: 0.5rem 0;
+  border-bottom: 1px solid #404040;
+  padding-left: 8px;
+}
+.setlist .setlist-list ul li:hover {
+  background-color: #eeeeee;
+}
+.setlist .setlist-list ul :last-child {
+  border: none;
+}
+
+.contact {
+  background: #000;
+  color: #fff;
+  padding: 4rem 2rem;
+  text-align: center;
+}
+.contact .social-icons {
+  margin-top: 2rem;
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+}
+.contact .social-icons a img {
+  width: 40px;
+  height: 40px;
+}
+
+@media screen and (max-width: 768px) {
+  .navbar .nav-links {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background: #000;
+    width: 100%;
+    padding: 1rem 0;
+  }
+  .navbar .nav-links a {
+    padding: 0.5rem 1rem;
+  }
+  .navbar .burger-menu {
+    display: flex;
+    flex-direction: column;
+    cursor: pointer;
+  }
+  .navbar .burger-menu span {
+    background: #fff;
+    height: 4px;
+    margin: 3px 0;
+    width: 25px;
+  }
+  .navbar .nav-links.active {
+    display: flex;
+  }
+  .setlist {
+    flex-direction: column;
+  }
+  .setlist .setlist-block {
+    border-right: none;
+    border-bottom: 1px solid #fff;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */
