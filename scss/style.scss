@@ -30,39 +30,10 @@ body {
 }
 
 // Navbar
-.navbar {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    background: $primary-color;
-    padding: 1rem 2rem;
-    position: fixed;
-    top: 0;
-    width: 100%;
-    z-index: 1000;
-
-    .logo {
-        line-height: 1;
-        img {
-        max-height: 50px;
-    }}
-
-    .nav-links {
-        list-style: none;
-        display: flex;
-        gap: 2rem;
-
-        li a {
-            color: $secondary-color;
-            text-decoration: none;
-            font-family: $font-body;
-
-            &:hover {
-                color: $accent-color;
-            }
-        }
-    }
+.logo {
+  width: 200px;
 }
+
 
 // Banner
 .banner {
@@ -84,14 +55,13 @@ body {
     display: flex;
     flex-direction: column;
     align-items: left;
-    background-color: #161616;
 
     .dates-header {
         display: flex;
-        justify-content: center;   
+        justify-content: center;
         align-items: center;
-        max-width: 800px;  
-        min-width: 600px; 
+        max-width: 800px;
+        min-width: 600px;
         height: 300px;
         margin: 0;
         padding: 2rem;
@@ -117,8 +87,6 @@ body {
         justify-content: left;
 
         .date-card {
-            width: 300px;
-            height: 300px;
             background-size: cover;
             background-position: center;
             position: relative;
@@ -139,7 +107,7 @@ body {
                 justify-content: center;
 
                 time {
-                    font-family: 'Baskervville', serif;
+                    font-family: 'Baskerville', serif;
 
                     .jour {
                         display: block;
@@ -161,7 +129,7 @@ body {
                     font-family: 'Roboto', sans-serif;
                     font-size: 1rem;
                     font-weight: 300;
-           
+
                 }
             }
         }
@@ -176,14 +144,14 @@ body {
     text-align: center;
     h2 {
         text-align: center;
-        
+
     }
 
     p {
         max-width: 600px;
         margin: 1rem auto;
         font-family: $font-body;
-   
+
     }
 
     .members {
@@ -252,7 +220,7 @@ body {
         border-right: 1px solid $secondary-color;
     }
 }
-   
+
     .setlist-list {
         flex: 1;
         padding: 0 0 0 3rem;
@@ -267,7 +235,7 @@ body {
                 font-size: 1rem;
                 padding: 0.5rem 0;
                 border-bottom: 1px solid #404040;
-                padding-left: 8px;  
+                padding-left: 8px;
                 &:hover{
                     background-color: #eeeeee;
                 }
@@ -284,7 +252,7 @@ body {
     background: $primary-color;
     color: $secondary-color;
     padding: 4rem 2rem;
-    text-align: center; 
+    text-align: center;
 
     .social-icons {
         margin-top: 2rem;
@@ -335,6 +303,13 @@ body {
         }
     }
 
+
+    .dates{
+        h2{
+            font-size: 2rem;
+        }
+    }
+
     .setlist {
         flex-direction: column;
 
@@ -342,5 +317,8 @@ body {
             border-right: none;
             border-bottom: 1px solid $secondary-color;
         }
+    }
+    .year{
+      f ont-size: 3rem;
     }
 }

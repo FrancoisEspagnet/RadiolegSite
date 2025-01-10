@@ -12,34 +12,22 @@ body {
 }
 body h1 {
   font-size: 4rem;
-  font-family: "Baskervville", serif;
+  font-family: "Baskerville", serif;
 }
 body h2 {
-  font-family: "Baskervville", serif;
+  font-family: "Baskerville", serif;
   font-size: 4.5rem;
   text-transform: uppercase;
   line-height: 1;
 }
 
-.navbar {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  background: #000;
-  padding: 1rem 2rem;
-  position: fixed;
-  top: 0;
-  width: 100%;
-  z-index: 1000;
+.logo{
+  width: 300px;
+  padding: 10px 0px;
 }
-.navbar .logo {
-  line-height: 1;
-}
-.navbar .logo img {
-  max-height: 50px;
-}
+
 .navbar .nav-links {
-  list-style: none;
+  padding-top: 15px;
   display: flex;
   gap: 2rem;
 }
@@ -76,8 +64,6 @@ body h2 {
   display: flex;
   justify-content: center;
   align-items: center;
-  max-width: 800px;
-  min-width: 600px;
   height: 300px;
   margin: 0;
   padding: 2rem;
@@ -88,7 +74,7 @@ body h2 {
   max-width: 80%;
 }
 .dates .dates-header .year {
-  font-family: "Baskervville", serif;
+  font-family: "Baskerville", serif;
   writing-mode: sideways-lr;
   font-size: 5rem;
   color: #000;
@@ -98,10 +84,9 @@ body h2 {
 .dates .concert-dates {
   display: flex;
   flex-wrap: wrap;
-  justify-content: left;
+  justify-content: center;
 }
 .dates .concert-dates .date-card {
-  width: 300px;
   height: 300px;
   background-size: cover;
   background-position: center;
@@ -115,7 +100,6 @@ body h2 {
   backdrop-filter: blur(8px); /* Ajoute l’effet de flou */
   color: #fff;
   text-align: center;
-  padding: 1rem;
   width: 100%;
   height: 100%;
   display: flex;
@@ -183,7 +167,7 @@ body h2 {
   text-align: center;
 }
 .group .members .member .info h3 {
-  font-family: "Baskervville", serif;
+  font-family: "Baskerville", serif;
   font-size: 1.5rem;
 }
 .group .members .member .info p {
@@ -261,6 +245,9 @@ body h2 {
 }
 
 @media screen and (max-width: 768px) {
+  .logo{
+    width: 200px;
+  }
   .navbar .nav-links {
     display: none;
     flex-direction: column;
@@ -288,12 +275,22 @@ body h2 {
   .navbar .nav-links.active {
     display: flex;
   }
+  body h1 {
+    font-size: 2rem;
+    font-family: "Baskervville", serif;
+  }
+  body h2{
+    font-size: 2rem;
+  }
   .setlist {
     flex-direction: column;
   }
   .setlist .setlist-block {
     border-right: none;
     border-bottom: 1px solid #fff;
+  }
+  .dates .dates-header .year {
+    font-size: 3rem;
   }
 }
 
