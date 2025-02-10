@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Radioleg Tribute Radiohead</title>
+    <title>Radioleg - Tribute Radiohead</title>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Baskervville&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="scss/style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -14,28 +14,30 @@
 </head>
 <body>
     <header>
-      <nav class="navbar bg-black fixed-top">
-        <div class="container-fluid">
-          <span class="navbar-brand mb-0 h1"><img src="img/logo-radioleg.png" alt="Logo Radioleg" class='logo'></span>
-          <div class="burger-menu">
-              <span></span>
-              <span></span>
-              <span></span>
-          </div>
-          <ul class="nav-links">
-              <li><a href="#dates">DATES</a></li>
-              <li><a href="#presentation">PRÉSENTATION</a></li>
-              <li><a href="#setlist">SET LIST</a></li>
-              <li><a href="#contact">CONTACT</a></li>
-          </ul>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-black fixed-top">
+            <div class="container-fluid">
+                <a class="navbar-brand logo" href="#"><img alt="logo Radioleg" src="img/logo-radioleg.png"></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                    <img width="30" src="img/bars-solid.svg" alt="Menu">
+                </button>
+                
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item"><a class="nav-link" href="#dates">DATES</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#presentation">PRÉSENTATION</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#setlist">SET LIST</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#contact">CONTACT</a></li>
+                    </ul>
+                </div>
+            </div>
         </nav>
+        
       </div>
     </header>
 
     <!-- Section Banner -->
     <section id="home" class="banner">
-        <h1 class="d-none d-sm-block">Tribute Radiohead</h1>
-        <h1 class="d-block d-sm-none" style='text-align: center;'>Tribute<br>Radiohead</h1>
+        <h1 class="text-center display-1">Tribute Radiohead</h1>
     </section>
 
     <!-- Section Dates -->
@@ -43,14 +45,13 @@
         <section id="dates" class="dates">
             <div class="concert-dates">
                 <!-- Titre principal avec année -->
-                <div class="dates-header col-lg-6 col-12">
-                    <h2>DATES <br>DES <br>CONCERTS</h2>
-                    <span class="year">2025</span>
+                <div class="dates-header col-lg-6 col-12 d-flex flex-lg-row align-items-center">
+                    <h2 class="display-2">DATES <br>DES <br>CONCERTS</h2>
+                    <span class="year display-2">2025</span>
                 </div>
 
                 <!-- Cartes de dates -->
-
-                <div class="date-card col-lg-3 col-12" style="background-image: url('img/le-steady.jpg');">
+                <div class="date-card col-lg-3 col-md-6 col-12" style="background-image: url('img/le-steady.jpg');">
                     <div class="overlay">
                         <time datetime="2025-01-25">
                             <span class="jour">25</span>
@@ -60,7 +61,7 @@
                     </div>
                 </div>
 
-                <div class="date-card col-lg-3 col-12" style="background-image: url('img/le-fiacre.jpg');">
+                <div class="date-card col-lg-3 col-md-6 col-12" style="background-image: url('img/le-fiacre.jpg');">
                       <div class="overlay">
                           <time datetime="2025-02-22">
                               <span class="jour">22</span>
@@ -70,7 +71,7 @@
                       </div>
                 </div>
 
-                <div class="date-card col-lg-3 col-12" style="background-image: url('img/bistro-287.jpg');">
+                <div class="date-card col-lg-3 col-md-6 col-12" style="background-image: url('img/bistro-287.jpg');">
                     <div class="overlay">
                         <time datetime="2025-03-29">
                             <span class="jour">29</span>
@@ -80,7 +81,7 @@
                     </div>
                 </div>
 
-                <div class="date-card col-lg-3 col-12" style="background-image: url('img/le-lembarzique.jpg');">
+                <div class="date-card col-lg-3 col-md-6 col-12" style="background-image: url('img/le-lembarzique.jpg');">
                     <div class="overlay">
                         <time datetime="2025-06-27">
                             <span class="jour">27</span>
@@ -90,7 +91,7 @@
                     </div>
                 </div>
 
-                <div class="date-card col-lg-3 col-12" style="background-image: url('img/placeholder.jpg');">
+                <div class="date-card col-lg-3 col-md-6 col-12" style="background-image: url('img/placeholder.jpg');">
                     <div class="overlay">
                         <time datetime="2025-04-01">
                             <span class="jour">?</span>
@@ -105,36 +106,37 @@
 
         <!-- Section Groupe -->
         <section id="presentation" class="group">
-            <h2>LE GROUPE</h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit...</p>
+            <h2 class="display-2">LE GROUPE</h2>
+            <p>Radioleg naît fin septembre 2024, à l’initiative de Steph, avec une idée simple : jouer du Radiohead entre passionnés. Très vite, le groupe se forme et l’alchimie opère naturellement. C'est cette énergie que vous pouvez découvrir sur scène.</p>
+
             <div class="members">
                 <div class="member" style="background-image: url('img/photos/photostudio_web_steph.jpg');">
                     <div class="info">
-                        <h3>Steph</h3>
+                        <h3 class="display-3">Steph</h3>
                         <p>Chanteur</p>
                     </div>
                 </div>
                 <div class="member" style="background-image: url('img/photos/photostudio_web_belou.jpg');">
                     <div class="info">
-                        <h3>Belou</h3>
+                        <h3 class="display-3">Belou</h3>
                         <p>Batteur</p>
                     </div>
                 </div>
                 <div class="member" style="background-image: url('img/photos/photostudio_web_ phil.jpg');">
                     <div class="info">
-                        <h3>Phil</h3>
+                        <h3 class="display-3">Phil</h3>
                         <p>Bassiste</p>
                     </div>
                 </div>
                 <div class="member" style="background-image: url('img/photos/photostudio_web_ justin.jpg');">
                     <div class="info">
-                        <h3>Justin</h3>
+                        <h3 class="display-3">Justin</h3>
                         <p>Guitariste</p>
                     </div>
                 </div>
                 <div class="member" style="background-image: url('img/photos/photostudio_web_feu.jpg');">
                     <div class="info">
-                        <h3>Feu</h3>
+                        <h3 class="display-3">Feu</h3>
                         <p>Clavier</p>
                     </div>
                 </div>
@@ -142,37 +144,45 @@
         </section>
 
         <!-- Section Set List -->
-        <section id="setlist" class="setlist">
-            <div class="setlist-header">
-                <h2>SET LIST</h2>
-            </div>
-            <div class="setlist-content">
-
-                <div class="setlist-list">
-                    <ul>
-                        <li>My Iron Lung</li>
-                        <li>No Surprises</li>
-                        <li>High and Dry</li>
-                        <li>Karma Police</li>
-                        <li>Just</li>
-                        <li>Airbag</li>
-                        <li>Planet Telex</li>
-                        <li>Exit Music (For a Film)</li>
-                        <li>Weird Fishes</li>
-                        <li>Street Spirit (Fade Out)</li>
-                        <li>Creep</li>
-                    </ul>
-                </div>
-            </div>
-        </section>
+      <section id="setlist" class="setlist">
+        <div class="setlist-header">
+          <h2 class="display-2">SET LIST</h2>
+        </div>
+        <div class="setlist-content">
+          <div class="setlist-list">
+            <ul>
+              <li>You</li>
+              <li>My Iron Lung</li>
+              <li>No Surprises</li>
+              <li>High and Dry</li>
+              <li>Just</li>
+              <li>Weird Fishes</li>
+              <li>Planet Telex</li>
+              <li>Exit Music (For a Film)</li>
+            </ul>
+          </div>
+          <div class="setlist-list">
+            <ul>
+              <li>Karma Police</li>
+              <li>Fake Plastic Trees</li>
+              <li>Street Spirit (Fade Out)</li>
+              <li>Lucky</li>
+              <li>The Tourist</li>
+              <li>Optimistic</li>
+              <li>2 + 2 = 5</li>
+              <li>Creep</li>
+            </ul>
+          </div>
+        </div>
+      </section>
 
         <!-- Section Contact -->
         <section id="contact" class="contact">
-            <h2>NOUS CONTACTER & NOUS SUIVRE</h2>
+            <h2  class="display-2">NOUS CONTACTER & NOUS SUIVRE</h2>
             <div class="social-icons">
-                <a href="#"><img src="img/youtube.png" alt="YouTube"></a>
-                <a href="#"><img src="img/instagram.png" alt="Instagram"></a>
-                <a href="#"><img src="img/facebook.png" alt="Facebook"></a>
+                <a href="https://www.youtube.com/@RadioLeg33"><img src="img/youtube-brands-solid.svg" alt="YouTube"></a>
+                <a href="https://www.instagram.com/radioleg_33/"><img src="img/instagram-brands-solid.svg" alt="Instagram"></a>
+                <a href="https://www.facebook.com/profile.php?id=61567763544182"><img src="img/facebook-f-brands-solid.svg" alt="Facebook"></a>
             </div>
         </section>
 
