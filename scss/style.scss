@@ -37,7 +37,6 @@ body {
 }
 
 // Navbar
-
 .navbar-nav {
   .nav-item {
     position: relative;
@@ -311,6 +310,80 @@ body {
     }
   }
 }
+
+/* Lightbox */
+.lightbox {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.8); /* Fond semi-transparent */
+  align-items: center;
+  justify-content: center;
+  z-index: 9999;
+
+  .lightbox-content {
+      background: #fff;
+      padding: 2rem;
+      max-width: 600px;
+      width: 90%;
+      border-radius: 5px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+      text-align: left;
+      animation: fadeIn 0.3s ease-in-out;
+      position: relative;
+      overflow-y: auto;
+      max-height: 80vh; /* Empêche le dépassement de l'écran */
+  }
+
+  .close-btn {
+      position: absolute;
+      top: 10px;
+      right: 15px;
+      font-size: 1.8rem;
+      cursor: pointer;
+      color: #000;
+  }
+}
+
+/* Animation d’apparition */
+@keyframes fadeIn {
+  from {
+      opacity: 0;
+      transform: scale(0.9);
+  }
+  to {
+      opacity: 1;
+      transform: scale(1);
+  }
+}
+
+/* footer */
+footer {
+  text-align: center;
+  nav {
+    ul {
+      display: flex;
+      justify-content: center;
+      gap: 0; 
+      padding: 0;
+      margin: 0;
+      li {
+        list-style: none;
+        padding: 5px; 
+        
+        a {
+          text-decoration: none;
+          color: #000;
+          display: inline-block; 
+        }
+      }
+    }
+  }
+}
+
 @media screen and (min-width: 360px) {
   .banner {
     height: 600px;
