@@ -54,3 +54,34 @@ document.addEventListener("DOMContentLoaded", function () {
         }
     });
 });
+
+// Egalisation des blocs de date
+document.addEventListener("DOMContentLoaded", function () {
+    function equalizeHeights() {
+        let elements = document.querySelectorAll(".dates-header, .date-card");
+        let maxHeight = 0;
+
+        // Réinitialise les hauteurs
+        elements.forEach(el => {
+            el.style.height = "auto";
+        });
+
+        // Trouve la hauteur max
+        elements.forEach(el => {
+            if (el.offsetHeight > maxHeight) {
+                maxHeight = el.offsetHeight;
+            }
+        });
+
+        // Applique la hauteur max à tous les éléments
+        elements.forEach(el => {
+            el.style.height = maxHeight + "px";
+        });
+    }
+
+    // Exécute au chargement
+    equalizeHeights();
+
+    // Exécute lors du redimensionnement
+    window.addEventListener("resize", equalizeHeights);
+});
