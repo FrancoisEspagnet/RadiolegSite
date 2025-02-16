@@ -393,7 +393,7 @@ footer {
 
 @media screen and (min-width: 360px) {
   .banner {
-    height: 600px;
+    height: 400px;
   }
   .group {
     p {
@@ -404,6 +404,9 @@ footer {
 @media screen and (min-width: 768px) {
     .logo{
         max-width: 300px;
+    }
+    .banner {
+      height: 600px;
     }
     #dates{
       .dates-header{
@@ -423,6 +426,7 @@ footer {
 @media screen and (min-width: 1024px) {
   .banner {
     height: 100vh;
+    background-position-y:33%;
   }
   #dates{
     .dates-header{
@@ -434,7 +438,7 @@ footer {
   .group {
     .members {
       .member {
-        flex: 1 1 calc(33.33% - 1rem);
+        flex: 1 1 calc(20% - 1rem);
       }
     }
   }
@@ -480,13 +484,4 @@ footer {
       }
     }
   }
-}
-@media screen and (min-width: 1024px) {
-    .group {
-        .members {
-          .member {
-            flex: 1 1 calc(20% - 1rem);
-          }
-        }
-      }
 }
