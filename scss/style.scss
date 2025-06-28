@@ -82,8 +82,8 @@ body {
   border: none !important;
 }
 .logo {
-    max-width: 200px;
-    line-height: 0;
+  max-width: 200px;
+  line-height: 0;
   img {
     width: 100%;
   }
@@ -186,7 +186,7 @@ body {
 // dates passées
 #dates .horsdate {
   filter: grayscale(1);
-  .overlay{
+  .overlay {
     color: #9a9a9a;
   }
 }
@@ -255,6 +255,11 @@ body {
     margin-bottom: 1rem;
     text-align: center;
     width: 100%;
+  }
+  h3 {
+    margin-top: 1rem;
+    margin-bottom: 0.2rem;
+    font-weight: bold;
   }
   .setlist-content {
     width: 100%;
@@ -332,38 +337,38 @@ body {
   z-index: 9999;
 
   .lightbox-content {
-      background: #fff;
-      padding: 2rem;
-      max-width: 600px;
-      width: 90%;
-      border-radius: 5px;
-      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
-      text-align: left;
-      animation: fadeIn 0.3s ease-in-out;
-      position: relative;
-      overflow-y: auto;
-      max-height: 80vh; /* Empêche le dépassement de l'écran */
+    background: #fff;
+    padding: 2rem;
+    max-width: 600px;
+    width: 90%;
+    border-radius: 5px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    text-align: left;
+    animation: fadeIn 0.3s ease-in-out;
+    position: relative;
+    overflow-y: auto;
+    max-height: 80vh; /* Empêche le dépassement de l'écran */
   }
 
   .close-btn {
-      position: absolute;
-      top: 10px;
-      right: 15px;
-      font-size: 1.8rem;
-      cursor: pointer;
-      color: #000;
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    font-size: 1.8rem;
+    cursor: pointer;
+    color: #000;
   }
 }
 
 /* Animation d’apparition */
 @keyframes fadeIn {
   from {
-      opacity: 0;
-      transform: scale(0.9);
+    opacity: 0;
+    transform: scale(0.9);
   }
   to {
-      opacity: 1;
-      transform: scale(1);
+    opacity: 1;
+    transform: scale(1);
   }
 }
 
@@ -374,17 +379,17 @@ footer {
     ul {
       display: flex;
       justify-content: center;
-      gap: 0; 
+      gap: 0;
       padding: 0;
       margin: 0;
       li {
         list-style: none;
-        padding: 5px; 
-        
+        padding: 5px;
+
         a {
           text-decoration: none;
           color: #000;
-          display: inline-block; 
+          display: inline-block;
         }
       }
     }
@@ -402,19 +407,19 @@ footer {
   }
 }
 @media screen and (min-width: 768px) {
-    .logo{
-        max-width: 300px;
-    }
-    .banner {
-      height: 600px;
-    }
-    #dates{
-      .dates-header{
-        .year{
-          font-size: 4.4rem !important;
-        }
+  .logo {
+    max-width: 300px;
+  }
+  .banner {
+    height: 600px;
+  }
+  #dates {
+    .dates-header {
+      .year {
+        font-size: 4.4rem !important;
       }
     }
+  }
   .group {
     .members {
       .member {
@@ -426,11 +431,11 @@ footer {
 @media screen and (min-width: 1024px) {
   .banner {
     height: 100vh;
-    background-position-y:33%;
+    background-position-y: 33%;
   }
-  #dates{
-    .dates-header{
-      .year{
+  #dates {
+    .dates-header {
+      .year {
         font-size: 5.5rem !important;
       }
     }
@@ -446,33 +451,31 @@ footer {
   .setlist {
     padding: 4rem 0;
     align-items: center;
-    
+
     .setlist-header {
-        width: 40%;
-        padding: 1rem;
-        text-align: center;
+      width: 40%;
+      padding: 1rem;
+      text-align: center;
     }
 
     .setlist-content {
-        width: 60%;
-        border-left: 1px solid;
-        display: flex;
+      width: 60%;
+      border-left: 1px solid;
+      display: flex;
     }
-    .setlist-block{
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        padding: 2rem 0 2rem 2rem;
-        border-right: 1px solid $secondary-color;
+    .setlist-block {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 2rem 0 2rem 2rem;
+      border-right: 1px solid $secondary-color;
     }
     .setlist-list {
-        flex: 1;
-        padding: 0 0 0 3rem;
-       
+      flex: 1;
+      padding: 0 0 0 3rem;
+
       ul {
-      
         li {
-      
           &:hover {
             background-color: #eeeeee;
           }
